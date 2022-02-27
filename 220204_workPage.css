@@ -1,0 +1,518 @@
+*{
+    /* outline: 1px solid red; */
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* -------------------------------------------sec_*WorkPage_workKv------------------------------------------- */
+.workKv_content{
+    display: flex;
+    flex-direction: column;
+}
+.workKv_content h1{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+.workKv_content .workKv_logo img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.workKv_workDesc span{
+    display: block;
+    line-height: 2;
+}
+.workBg_detail img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.workKv_backImg img{
+    width: 100%;
+    vertical-align: bottom;
+}
+@media screen and (max-width: 375px) {
+    section[class*="workKv"] .wrap{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .workKv_content{
+        margin: 0 auto;
+        align-items: center;
+    }
+    .workKv_text{
+        padding-top: 40px;
+    }
+    .workKv_text .workKv_summary{
+        font-size: 20px;
+    }
+    .workKv_workDesc{
+        padding-top: 20px;
+    }
+    .workKv_text .workKv_workDesc{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 376px) {
+    section[class*="workKv"] .wrap{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .workKv_content{
+        align-items: center;
+    }
+    .workKv_text{
+        padding-top: 40px;
+    }
+    .workKv_workDesc{
+        padding-top: 20px;
+    }
+    .workKv_content .workKv_btn{
+        padding-left: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    section[class*="workKv"] .wrap{
+        position: relative;
+        padding: unset;
+    }
+    section[class*="workKv"] 
+   .wrap .workKv_content{
+        width: 22.241379%;
+        position: absolute;
+        align-items: unset;
+    }
+    .workKv_content .workKv_title{
+        align-self: flex-start;
+    }
+    .workKv_text{
+        padding-top: 60px;
+    }
+    .workKv_workDesc{
+        padding-top: 16px;
+    }
+    .workKv_content .workKv_btn{
+        padding-top: 44px;
+        align-self: flex-start;
+    }
+}
+/* -------------------------------------------sec_jimmyWorkPage_workKv------------------------------------------- */
+/* -------------------------------------------sec_onniWorkPage_workKv------------------------------------------- */
+/* -------------------------------------------sec_tomatoClockWorkPage_workKv------------------------------------------- */
+/* -------------------------------------------sec_tomatoClockWorkPage_workKv------------------------------------------- */
+.sec_jimmyWorkPage_workKv .workKv_title{
+    max-width: 60px;
+}
+.sec_onniWorkPage_workKv .workKv_title{
+    max-width: 138px;
+}
+.sec_tomatoClockWorkPage_workKv .workKv_title,
+.sec_eatWorkPage_workKv .workKv_title{
+    max-width: 90px;
+}
+.sec_grphicWorkPage_workKv h1{
+    width: unset;
+    height: unset;
+    position: relative;
+    overflow: unset;
+    font-weight: 400;
+    font-size: 18px;
+    z-index: 1;
+}
+.sec_grphicWorkPage_workKv span{
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.sec_grphicWorkPage_workKv .workKv_title h1::before,
+.sec_grphicWorkPage_workKv .workKv_title h1::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    left: -10px;
+    right: -10px;
+    background-color: #4CC6C9;
+    z-index: 0;
+}
+.sec_grphicWorkPage_workKv .workKv_title h1::before{
+    top: 12px;
+}
+.sec_grphicWorkPage_workKv .workKv_title h1::after{
+    bottom: -12px;
+}
+.sec_grphicWorkPage_workKv span:last-child{
+    padding-top: 20px;
+}
+@media screen and (max-width: 375px) {
+}
+@media screen and (min-width: 376px) {
+    .sec_tomatoClockWorkPage_workKv .workKv_content,
+    .sec_eatWorkPage_workKv .workKv_content{
+        margin-top: -40px;
+        position: relative;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sec_jimmyWorkPage_workKv .workKv_content{
+        padding-top: 13.793103%;
+        left: 60px;
+    }
+    .sec_onniWorkPage_workKv .workKv_content{
+        padding-top: 21.379310%;
+        right: 20px;
+    }
+    .sec_tomatoClockWorkPage_workKv .workKv_content,
+    .sec_eatWorkPage_workKv .workKv_content{
+        margin-top: unset;
+    }
+    .sec_tomatoClockWorkPage_workKv .workKv_content{
+        padding-top: 18.25%;
+    }
+    .sec_eatWorkPage_workKv .workKv_content{
+        padding-top: 13.833333%;
+    }
+    .sec_tomatoClockWorkPage_workKv .workKv_content{
+        right: 20px;
+    }
+    .sec_eatWorkPage_workKv .workKv_content{
+        left: 60px;
+    }
+    .sec_grphicWorkPage_workKv .workKv_content{
+        padding-top: 37.583333%;
+        left: 60px;
+    }
+}
+/* -------------------------------------------sec_jimmyWorkPage_workKv------------------------------------------- */
+/* -------------------------------------------sec_onniWorkPage_workKv------------------------------------------- */
+/* -------------------------------------------sec_tomatoClockWorkPage_workKv------------------------------------------- */
+/* -------------------------------------------sec_tomatoClockWorkPage_workKv------------------------------------------- */
+/* -------------------------------------------sec_*WorkPage_workContent------------------------------------------- */
+.workBg_subTitle span{
+    display: block;
+    text-align: center;
+}
+.workBg_group .workBg_item:first-child{
+    padding-top: 0;
+}
+section[class*="makeBg"] .workBg_item,
+section[class*="visualDisplay"]  .workBg_item{
+    padding-top: 40px;
+}
+.workBg_item h3{
+    margin: 0;
+    font-weight: 400;
+}
+.workBg_about .workBg_detail p{
+    margin: 0;
+    line-height: 1.75;
+}
+.workBg_font span{
+    display: block;
+}
+.workBg_font span:last-child,
+.systemColor_text{
+    padding-top: 8px;
+}
+.workBg_detail_group{
+    display: flex;
+}
+section[class*="visualDisplay"]  .workBg_detail_group{
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+section[class*="visualDisplay"]  .workBg_detail_item{
+    padding-left: 20px;
+}
+.workBg_about .workBg_detail_title{
+    display: inline-block;
+    position: relative;
+}
+.workBg_about .introData_item:not(:first-child){
+    padding-top: 40px;
+}
+.workBg_about_group{
+    flex-direction: column;
+}
+.workBg_about .workBg_detail_title::before{
+    content: "";
+    position: absolute;
+    height: 6px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4CC6C9;
+    z-index: 0;
+}
+.workBg_about .workBg_detail_title span{
+    position: relative;
+}
+.workBg_about .workBg_detail_text{
+    display: flex;
+    flex-wrap: wrap;
+}
+.workBg_about .workBg_detail_text span:last-child{
+    display: flex;
+    align-items: center;
+}
+.workBg_about .workBg_detail_text span:last-child::before{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 12px;
+    margin-right: 10px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 12px solid #4CC6C9;
+}
+.workBg_icon_group:not(:first-child){
+    padding-top: 20px;
+}
+.workBg_icon_item{
+    width: 54px;
+    flex-shrink: 0;
+}
+.workBg_systemColor_item{
+    width: 80px;
+    max-width: 80px;
+    flex-grow: 1;
+}
+.workBg_systemColor_item::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+section[class*="pageDisplay"] .workBg_item{
+    padding-top: 60px;
+}
+section[class*="visualDisplay"]  .workBg_detail_group{
+    margin-top: -20px;
+}
+section[class*="pageDisplay"] .workBg_item{
+    text-align: center;
+}
+section[class*="pageDisplay"] .workBg_smallTitle{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+section[class*="pageDisplay"] .workBg_detail_item{
+    box-sizing: border-box;
+}
+.workBg_detail_item,
+section[class*="pageDisplay"] .workBg_detail_img{
+    padding-top: 20px;
+}
+@media screen and (max-width: 375px) {
+    section[class*="workContent"]{
+        padding-top: 100px;
+    }
+    .workBg_subTitle span:last-child{
+        padding-top: 8px;
+    }
+    .workBg_subTitle .stageNum{
+        font-size: 16px;
+    }
+    .workBg_subTitle .stageText{
+        font-size: 20px;
+    }
+    .workBg_group{
+        padding-top: 45px;
+    }
+    section[class*="visualDisplay"]  .workBg_detail{
+        padding-top: 20px;
+    }
+    .workBg_about .workBg_detail_text{
+        margin-top: -4px;
+    }
+    .workBg_about .workBg_detail_text span{
+        padding-top: 4px;
+    }
+    .workBg_about .workBg_detail_text span:last-child::before{
+        margin-left: 8px;
+        margin-right: 6px;
+    }
+    section[class*="pageDisplay"] .workBg_smallTitle{
+        padding: 8px 20px;
+    }
+    section[class*="pageDisplay"] .workBg_detail_item:not(:first-child){
+        padding-left: 12px;
+    }
+}
+@media screen and (min-width: 376px) {
+    section[class*="workContent"]{
+        padding-top: 100px;
+    }
+    .workBg_subTitle span:last-child{
+        padding-top: 8px;
+    }
+    .workBg_subTitle .stageNum{
+        font-size: 16px;
+    }
+    .workBg_subTitle .stageText{
+        font-size: 20px;
+    }
+    .workBg_group{
+        padding-top: 60px;
+    }
+    section[class*="makeBg"] .workBg_item,
+    section[class*="visualDisplay"] .workBg_item{
+        max-width: 636px;
+        margin: 0 auto;
+        display: flex;
+    }
+    section[class*="visualDisplay"]  .workBg_smallTitle{
+        width: 5em;
+        flex-shrink: 0;
+    }
+    
+    section[class*="visualDisplay"]  .workBg_detail{
+        padding-left: 80px;
+    }
+    section[class*="makeBg"] .workBg_detail,
+    section[class*="visualDisplay"]  .workBg_detail{
+        max-width: 516px;
+    }section[class*="pageDisplay"] .workBg_smallTitle{
+        padding: 16px 28px;
+    }
+    section[class*="pageDisplay"] .workBg_detail_item:not(:first-child){
+        padding-left: 20px;
+    }
+    .workBg_about .workBg_detail_text{
+        margin-top: -8px;
+    }
+    .workBg_about .workBg_detail_text span{
+        padding-top: 8px;
+    }
+    .workBg_about .workBg_detail_text span:last-child::before{
+        margin-left: 12px;
+        margin-right: 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    section[class*="workContent"]{
+        padding-top: 160px;
+    }
+    .workBg_subTitle{
+        margin: 0 auto;
+    }
+    .workBg_subTitle span:last-child{
+        padding-top: 4px;
+    }
+    .workBg_subTitle .stageNum{
+        font-size: 24px;
+    }
+    .workBg_subTitle .stageText{
+        font-size: 28px;
+    }
+}
+/* -------------------------------------------sec_*WorkPage_workContent------------------------------------------- */
+/* -------------------------------------------sec_jimmyWorkPage_workContent------------------------------------------- */
+.sec_jimmyWorkPage_visualDisplay .systemColor_color_main::before{
+    background-color: #4D667A;
+}
+.sec_jimmyWorkPage_visualDisplay .systemColor_color_second::before{
+    background-color: #FFC400;
+}
+.sec_jimmyWorkPage_visualDisplay .systemColor_color_third::before{
+    background-color: #EBE7DF;
+}
+.sec_onniWorkPage_visualDisplay .systemColor_color_main::before{
+    background-color: #FBEDD4;
+}
+.sec_onniWorkPage_visualDisplay .systemColor_color_second::before{
+    background-color: #CAC0B7;
+}
+.sec_onniWorkPage_visualDisplay .systemColor_color_third::before{
+    background-color: #8B9DA7;
+}
+.sec_tomatoClockWorkPage_visualDisplay .systemColor_color_main::before{
+    background-color: #BF8886;
+}
+.sec_tomatoClockWorkPage_visualDisplay .systemColor_color_second::before{
+    background-color: #754C3D;
+}
+.sec_tomatoClockWorkPage_visualDisplay .systemColor_color_third::before{
+    background-color: #E84B53;
+}
+.sec_eatWorkPage_visualDisplay .systemColor_color_main::before{
+    background-color: #FAE6AA;
+}
+.sec_eatWorkPage_visualDisplay .systemColor_color_second::before{
+    background-color: #C88C50;
+}
+.sec_eatWorkPage_visualDisplay .systemColor_color_third::before{
+    background-color: #AE7E74;
+}
+.sec_tomatoClockWorkPage_pageDisplay .workBg_detail_group,
+.sec_eatWorkPage_pageDisplay .workBg_detail_group{
+    justify-content: center;
+}
+.sec_tomatoClockWorkPage_pageDisplay .workBg_detail .workBg_detail_img,
+.sec_eatWorkPage_pageDisplay .workBg_detail .workBg_detail_img{
+    padding-top: 0;
+}
+.sec_grphicWorkPage_pageDisplay .workBg_detail_img,
+.sec_illustrationWorkPage_pageDisplay .workBg_detail_img{
+    margin: 0 auto;
+}
+.sec_grphicWorkPage_pageDisplay .workBg_item .workBg_detail .workBg_detail_item{
+    padding: 0;
+}
+.sec_grphicWorkPage_pageDisplay .workBg_detail_group{
+    flex-direction: column;
+}
+.sec_illustrationWorkPage_pageDisplay .workBg_detail_img img{
+    width: 100%;
+    vertical-align: bottom;
+}
+@media screen and (max-width: 375px) {
+    .sec_tomatoClockWorkPage_pageDisplay .workBg_detail_img:not(.workBg_overview_detail_img),
+    .sec_eatWorkPage_pageDisplay .workBg_detail_img:not(.workBg_overview_detail_img){
+        max-width: 229px;
+    }
+    .sec_grphicWorkPage_pageDisplay .workBg_detail_img,
+    .sec_illustrationWorkPage_pageDisplay .workBg_detail_img:not(.workBg_detail_forest){
+        max-width: 335px;
+    }
+    .sec_illustrationWorkPage_pageDisplay .workBg_detail_forest{
+        max-width: 200px;
+    }
+}
+@media screen and (min-width: 376px) {
+    .sec_tomatoClockWorkPage_pageDisplay .workBg_detail_img:not(.workBg_overview_detail_img),
+    .sec_eatWorkPage_pageDisplay .workBg_detail_img:not(.workBg_overview_detail_img){
+        max-width: 229px;
+    }
+    .sec_grphicWorkPage_pageDisplay .workBg_detail_img:not(.workBg_detail_2020card),
+    .sec_illustrationWorkPage_pageDisplay .workBg_detail_img:not(.workBg_detail_forest){
+        max-width: 500px;
+    }
+    .sec_grphicWorkPage_pageDisplay .workBg_detail_2020card{
+        max-width: 400px;
+    }
+    .sec_illustrationWorkPage_pageDisplay .workBg_detail_forest{
+        max-width: 300px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sec_tomatoClockWorkPage_pageDisplay .workBg_detail_img:not(.workBg_overview_detail_img),
+    .sec_eatWorkPage_pageDisplay .workBg_detail_img:not(.workBg_overview_detail_img){
+        max-width: 300px;
+    }
+    .sec_grphicWorkPage_pageDisplay .workBg_detail_img:not(.workBg_detail_2020card){
+        max-width: 700px;
+    }
+    .sec_grphicWorkPage_pageDisplay .workBg_detail_2020card,
+    .sec_illustrationWorkPage_pageDisplay .workBg_detail_forest{
+        max-width: 500px;
+    }
+    .sec_illustrationWorkPage_pageDisplay .workBg_detail_img:not(.workBg_detail_forest){
+        max-width: 900px;
+    }
+}
