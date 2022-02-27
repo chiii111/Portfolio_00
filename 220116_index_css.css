@@ -29,6 +29,7 @@ h1,h2,h3,p,span,a{
     z-index: 3;
     background-color: unset;
     backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 .sec_mainNav .wrap{
     display: flex;
