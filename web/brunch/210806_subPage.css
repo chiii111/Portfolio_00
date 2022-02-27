@@ -1024,6 +1024,7 @@
 .sec_location .subPage_box_pic img{
     width: 100%;
     vertical-align: bottom;
+    opacity: 0;
 }
 .sec_location .subPage_pic_map{
     width: 100%;
