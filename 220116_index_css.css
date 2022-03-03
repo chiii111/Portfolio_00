@@ -38,6 +38,9 @@ h1,h2,h3,p,span,a{
 .sec_mainNav a{
     text-decoration: none;
 }
+.sec_mainNav .mainLogo a{
+    display: block;
+}
 .sec_mainNav .mainLogo:hover h1,
 .sec_mainNav li:hover a{
     color: #4CC6C9;
@@ -62,6 +65,37 @@ h1,h2,h3,p,span,a{
     list-style: none;
     display: flex;
 }
+.goToTop_btn{
+    position: fixed;
+    z-index: 3;
+}
+.goToTop_btn a{
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border: 1px solid #4CC6C9;
+    border-radius: 500px;
+    color: #000;
+    font-size: 16px;
+    backdrop-filter: blur(16px);
+}
+.goToTop_btn a:hover{
+    background-color: rgba(232, 239, 231, .5);
+}
+.goToTop_btn_img{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    width: 15px;
+}
+.goToTop_btn img{
+    width: 100%;
+    vertical-align: bottom;
+}
 @media screen and (max-width: 375px) {
     .sec_mainNav{
         height: 60px;
@@ -69,8 +103,8 @@ h1,h2,h3,p,span,a{
     .sec_mainNav + .container:not(.sec_mainKv){
         padding-top: 60px;
     }
-    .mainNav_link_item:last-child{
-        padding-left: 20px;
+    .mainNav_link_item a{
+        padding: 10px;
     }
     .sec_mainNav a,
     .sec_mainNav h1,
@@ -80,6 +114,10 @@ h1,h2,h3,p,span,a{
     .sec_mainNav h1,
     .sec_mainNav h2{
         line-height: 60px;
+    }
+    .goToTop_btn{
+        right: 20px;
+        top: calc(100vh - 180px);
     }
 }
 @media screen and (min-width: 376px) {
@@ -92,8 +130,8 @@ h1,h2,h3,p,span,a{
     .sec_mainNav .wrap{
         padding: 0 40px;
     }
-    .mainNav_link_item:last-child{
-        padding-left: 40px;
+    .mainNav_link_item a{
+        padding: 10px 20px;
     }
     .sec_mainNav a,
     .sec_mainNav h1,
@@ -105,10 +143,21 @@ h1,h2,h3,p,span,a{
     .sec_mainNav h2{
         line-height: 100px;
     }
+    .goToTop_btn{
+        right: 40px;
+        top: calc(100vh - 180px);
+    }
 }
 @media screen and (min-width: 768px) {
-    .mainNav_link_item:last-child{
+    /* .mainNav_link_item:last-child{
         padding-left: 100px;
+    } */
+    .mainNav_link_item a{
+        padding: 10px 50px;
+    }
+    .goToTop_btn{
+        right: 20px;
+        top: calc(100vh - 200px);
     }
 }
 /* -------------------------------------------sec_mainNav------------------------------------------- */
@@ -256,7 +305,7 @@ h1,h2,h3,p,span,a{
     left: 0;
 }
 .mainKv_link_item:hover a{
-    background-color: rgba(76, 198, 201);
+    background-color: #4CC6C9;
 }
 .mainKv_link_item:hover .mainKv_arrow{
     left: 12px;
