@@ -258,7 +258,7 @@ section[class*="visualDisplay"]  .workBg_detail_item{
     display: flex;
     align-items: center;
 }
-.workBg_about .workBg_detail_text span:last-child::before{
+.workBg_about .workBg_detail_text span:nth-child(2):before{
     content: "";
     display: inline-block;
     width: 0;
